@@ -1,5 +1,40 @@
 @import "colors.less";
 
+// FONT SMOOTHING
+atom-text-editor, atom-text-editor[mini], atom-text-editor[mini]::shadow, :host {
+  -webkit-font-smoothing: antialiased;
+}
+
+// UI
+.sans {
+  font-family: "PT Sans", "FrutigerNextLT", "Noto Sans", "Helvetica Neue" !important;
+  font-size: 14px !important;
+}
+
+.settings-view .section-container {
+  max-width: 9999px;
+}
+
+atom-workspace, .tab-bar .tab, .tree-view, .tree-view * {
+  .sans;
+}
+
+atom-text-editor::shadow {
+
+  .entity.name.tag {
+    text-decoration: none;
+  }
+
+  .gutter {
+    .line-number {
+      font-family: "PT Mono";
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+}
+
 // EDITOR BACKGROUND & FONT COLORS
 .atom-text-editor, :host {
   background-color: @code-background;
@@ -36,6 +71,11 @@
     // border-right: 10px solid @code-background;
 
     .line-number {
+
+      // FONT
+      font-family: "PT Mono";
+      font-size: 16px;
+      line-height: 27px;
 
       // GUTTER BACKGROUND
       background: @gutter-background;
