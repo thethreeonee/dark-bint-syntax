@@ -18,6 +18,9 @@
 @light-orange: #ffe644;
 @yellow: @orange;
 
+@background: @background;
+@foreground: @foreground;
+
 // GUTTER
 @gutter-text: lighten(@background, 50%);
 @gutter-text-highlight: @cyan;
@@ -25,9 +28,9 @@
 @gutter-background-highlight: @selected-line;
 
 // CODE VIEW
-@code-background: @very-dark-gray; // editor background
+@code-background: @background; // editor background
 @code-font: Source Code Pro;
-@code-font-color: @very-light-gray; // default editor text
+@code-font-color: @foreground; // default editor text
 
 // SYNTAX COLORS
 @comment: lighten(@background, 40%);
