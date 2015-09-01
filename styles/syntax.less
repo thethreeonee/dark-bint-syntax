@@ -44,6 +44,10 @@
     color: @storage;
   }
 
+  &.flowtype {
+    color: @cyan;
+  }
+
 }
 
 
@@ -442,9 +446,14 @@
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
+  color: lighten(@background, 40%);
   &.heading {
     color: @code-font-color;
   }
+}
+
+.entity.gfm {
+  background-color: fadeOut(@blue, 90%);
 }
 
 
