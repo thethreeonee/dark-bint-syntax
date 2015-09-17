@@ -37,7 +37,7 @@
 
 // STORAGE |
 .storage {
-  color: @keyword;
+  color: @storage;
 
   // var of var a = b;
   &.modifier {
@@ -113,6 +113,10 @@
   // REGEX - [\da-z] of /-([\da-z])/gi (js)
   .constant {
     color: @regex;
+  }
+
+  &.unquoted {
+    color: @purple;
   }
 
   &.regexp {
@@ -368,6 +372,11 @@
 
 
   &.brace {
+
+    // square - []
+    &.square {
+      color: @cyan;
+    }
 
     // curly braces - {}
     &.curly {
