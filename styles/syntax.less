@@ -92,6 +92,10 @@
   &.this {
     color: @yellow;
   }
+
+  &.other.property.static {
+    color: @magenta;
+  }
 }
 
 
@@ -331,11 +335,11 @@
 
   // init in init: function(){} (js)
   &.name.function {
-    color: @entity;
+    color: @light-purple;
   }
 
   &.name.class, &.name.type.class {
-    color: @entity;
+    color: @light-purple;
   }
 
   &.name.section {
@@ -345,7 +349,7 @@
   // div of <div> (html), body of body{} (css)
   &.name.tag {
     color: @tag;
-    text-decoration: done;
+    text-decoration: none;
   }
 
 
