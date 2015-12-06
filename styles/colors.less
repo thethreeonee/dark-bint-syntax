@@ -35,7 +35,7 @@
 @code-font-color: @foreground; // default editor text
 
 // SYNTAX COLORS
-@comment: lighten(@background, 40%);
+@comment: #7a809e;
 @comment-bg: transparent;
 @comment-punc: @comment;
 @string: @blue;
@@ -89,3 +89,36 @@
 
 @search-item-border: @blue;
 @search-item-bg: @red;
+
+
+
+// Config -----------------------------------
+@syntax-hue:          230;
+@syntax-saturation:   16%;
+@syntax-brightness:   15%;
+
+
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 5%, 84%); // default text
+@mono-2: hsl(@syntax-hue,  9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+@hue-1:   #00bfff; // <-cyan
+@hue-2:   #008aff; // <-blue
+@hue-3:   #db84f4; // <-purple
+@hue-4:   #6dba09; // <-green
+
+@hue-5:   #bb3322; // <-red 1
+@hue-5-2: #ff4c98; // <-red 2
+
+@hue-6:   #ffa500; // <-orange 1
+@hue-6-2: #ffee44; // <-orange 2
+
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );

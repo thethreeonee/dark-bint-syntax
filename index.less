@@ -1,10 +1,16 @@
-@import "./styles/editor.less";
-@import "./styles/syntax.less";
-@import "./styles/plugins.less";
+// Atom Syntax Theme: DarkBint
+@import (reference) "styles/syntax-variables";
+
+@import 'editor';
+@import 'language';
+@import 'plugins';
 
 // Language specific styles
-@import "./styles/languages/html.less";
-@import "./styles/languages/jsx.less";
-@import "./styles/languages/jade.less";
-@import "./styles/languages/json.less";
-@import "./styles/languages/mustache.less";
+@import 'languages/cs';
+@import 'languages/css';
+@import 'languages/gfm';
+@import 'languages/ini';
+@import 'languages/java';
+@import 'languages/json';
+@import 'languages/ruby';
+@import 'languages/python';
