@@ -32,7 +32,7 @@
   }
 
   &.other.unit {
-    color: @hue-6;
+    color: @green;
   }
 }
 
@@ -40,6 +40,8 @@
   color: @hue-3;
 
   &.type {
+    color: @magenta;
+
     &.annotation,
     &.primitive {
       color: @hue-3;
@@ -66,7 +68,7 @@
   }
 
   &.numeric {
-    color: @hue-6;
+    color: @cyan;
   }
 
   &.other.color {
@@ -90,20 +92,32 @@
   }
 
   &.property {
-    color: @hue-3;
+    color: @magenta;
+  }
+
+  &.this {
+    color: @yellow;
   }
 }
 
 .string {
-  color: @hue-4;
+  color: @blue;
 
 
   &.regexp {
-    color: @hue-1;
+    color: @green;
+  }
 
-    .source.ruby.embedded {
-      color: @hue-6-2;
-    }
+  .source.embedded {
+    color: @orange;
+  }
+
+  .quasi {
+    color: @magenta;
+  }
+
+  &.unquoted {
+    color: @purple;
   }
 
   &.other.link {
@@ -140,6 +154,10 @@
       color: @hue-3;
       font-style: italic;
     }
+
+    &.tag {
+      color: @blue;
+    }
   }
 
   &.section {
@@ -164,6 +182,14 @@
     color: @hue-1;
   }
 
+  &.property-name {
+    color: @light-purple;
+  }
+
+  &.property-value {
+    color: @red;
+  }
+
   &.function  {
     color: @hue-1;
 
@@ -175,7 +201,11 @@
 
 .entity {
   &.name.function {
-    color: @hue-2;
+    color: @light-purple;
+  }
+
+  &.name.method {
+    color: @green;
   }
 
   &.name.class,
@@ -188,11 +218,11 @@
   }
 
   &.name.tag {
-    color: @hue-5;
+    color: @cyan;
   }
 
   &.other.attribute-name {
-    color: @hue-6;
+    color: @cyan;
 
     &.id {
       color: @hue-2;
@@ -211,7 +241,7 @@
 
   &.method-call,
   &.method {
-    color: @mono-1;
+    color: @green;
   }
 
   &.definition {
@@ -238,6 +268,10 @@
   }
 
   &.tag {
+    color: @mono-1;
+  }
+
+  &.curly {
     color: @mono-1;
   }
 }
