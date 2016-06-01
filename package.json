@@ -2,12 +2,14 @@
   "name": "dark-bint-syntax",
   "theme": "syntax",
   "version": "0.8.4",
-  "description": "A short description of your syntax theme",
+  "author": "Murriouz <Murriouz@gmail.com>",
+  "readme": "./README.md",
+  "description": "A dark and colourful syntax theme.",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/MiincGu/dark-bint-syntax",
+  "repository": "https://github.com/Murriouz/dark-bint-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
