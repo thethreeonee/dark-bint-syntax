@@ -1,7 +1,7 @@
 {
   "name": "dark-bint-syntax",
   "theme": "syntax",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "author": "Murriouz <Murriouz@gmail.com>",
   "readme": "./README.md",
   "description": "A dark and colourful syntax theme.",
